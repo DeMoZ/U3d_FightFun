@@ -312,6 +312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e691a8b4e1f143b39d2e79d24f6ed5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _actTimerRange: {x: 0.01, y: 1}
+  _animator: {fileID: 95000013452371578}
+  <BotState>k__BackingField: 0
 --- !u!1 &1000011976158022
 GameObject:
   m_ObjectHideFlags: 0
