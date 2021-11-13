@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 15
   Power: 1
+  thingSpeed: 1
   AttackSpeed: 1
   DefenceSpeed: 1
-  StartPosition: {x: 0.6, y: 0, z: 0}
+  Energy: 10
+  StartPosition: {x: 0.65, y: 0, z: 0}
   StartRotation: {x: 0, y: -90, z: 0}
   ActTimerRange: {x: 0.5, y: 2}

@@ -1,34 +1,26 @@
-using System.Collections;
 using UnityEngine;
 
 public class RemovePrefix : MonoBehaviour
 {
-    public Transform MixamoRigObject = default;
-    public string _prefix = "mixamorig:";
-    
+    [SerializeField] private Transform _mixamoRigObject = default;
+    [SerializeField] private string _prefix = "mixamorig:";
+
     [ContextMenu("Remove Prefix")]
     public void RemovePrefixFromNames()
     {
-        foreach (Transform child in MixamoRigObject)
-        {
-            StartCoroutine(FixPrefix(child));
-        }
+        if (!_mixamoRigObject)
+            _mixamoRigObject = transform;
+        
+        foreach (Transform child in _mixamoRigObject) 
+            FixPrefix(child);
     }
-    
-    private IEnumerator FixPrefix(Transform go)
+
+    private void FixPrefix(Transform go)
     {
-        foreach (Transform child in MixamoRigObject)
-        {
-            yield return null;
+        if (go.name.Contains(_prefix)) 
+            go.name = go.name.Split(':')[1];
 
-            if (child.name.Contains(_prefix))
-            {
-                child.name =  child.name.Split(':')[1];
-                Debug.Log($"Removed prefix from {child.name}");
-            }
-
-            foreach (Transform grandChild in child)
-                yield return StartCoroutine(FixPrefix(grandChild));
-        }
+        foreach (Transform child in go) 
+            FixPrefix(child);
     }
 }

@@ -5,7 +5,7 @@ public class BotStats : ScriptableObject
 {
     public int Health = 15;
     public int Power = 1;
-    public float thingSpeed = 1;
+    public float thinkSpeed = 1;
     public float AttackSpeed = 1;
     public float DefenceSpeed = 1;
     public float Energy = 10;
