@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000011813424072, guid: 27d5d38a58fb54240ae92d1d0ad28430, type: 3}
       propertyPath: m_Name
-      value: AllyBot
+      value: BotAlly Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4000014260285384, guid: 27d5d38a58fb54240ae92d1d0ad28430, type: 3}
       propertyPath: m_RootOrder
@@ -55,9 +55,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95000013452371578, guid: 27d5d38a58fb54240ae92d1d0ad28430, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 834f66f088dbf6c4d98acfe3abd4a721, type: 2}
     - target: {fileID: 137000011669451532, guid: 27d5d38a58fb54240ae92d1d0ad28430, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f18084bf286dd0c43aa79baea799d1c6, type: 2}
+    - target: {fileID: 8480184659164375580, guid: 27d5d38a58fb54240ae92d1d0ad28430, type: 3}
+      propertyPath: <BotStats>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 67cba056f570ce44596fcd8c77cef68e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27d5d38a58fb54240ae92d1d0ad28430, type: 3}
