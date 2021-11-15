@@ -18,6 +18,11 @@ MonoBehaviour:
   AttackSpeed: 1
   DefenceSpeed: 1
   Energy: 10
-  StartPosition: {x: -1, y: 0, z: 0}
+  StartPosition: {x: -1.1, y: 0, z: 0}
   StartRotation: {x: 0, y: 90, z: 0}
-  ActTimerRange: {x: 1, y: 2}
+  AttackTimerRange:
+    Min: 1
+    Max: 3
+  DefenceTimerRange:
+    Min: 0.2
+    Max: 0.5

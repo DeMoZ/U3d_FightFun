@@ -13,3 +13,11 @@ public enum BotSubState
     After
 }
 
+public enum AnimatorState
+{
+    Idle,
+    GotHit,
+    Attack,
+    Defence,
+    Defeated,
+}

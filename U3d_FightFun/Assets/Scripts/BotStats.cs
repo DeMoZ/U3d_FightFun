@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "BotStats", menuName = "ScriptableObjects/BotStats")]
@@ -11,6 +12,20 @@ public class BotStats : ScriptableObject
     public float Energy = 10;
     public Vector3 StartPosition;
     public Vector3 StartRotation;
-    
-    public Vector2 ActTimerRange = new Vector2(0.01f, 1f);
+
+    public Range AttackTimerRange = new Range(1f, 3f);
+    public Range DefenceTimerRange = new Range(0.01f, 0.5f);
+}
+
+[Serializable]
+public class Range
+{
+    public float Min;
+    public float Max;
+
+    public Range(float min, float max)
+    {
+        Min = min;
+        Max = max;
+    }
 }

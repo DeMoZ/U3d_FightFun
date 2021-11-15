@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd7821e4552498281aa643f11dcc1a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allyBot: {fileID: 3331288673425401191, guid: ee7edf0f21c124545b09de868e463174, type: 3}
-  _enemyBot: {fileID: 3912332465048226792, guid: c3df3537093099041a18decabb38d6d9, type: 3}
+  _allyBot: {fileID: 6599809625549243571, guid: ee7edf0f21c124545b09de868e463174, type: 3}
+  _enemyBot: {fileID: 4892953338262399548, guid: c3df3537093099041a18decabb38d6d9, type: 3}
